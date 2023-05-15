@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Form</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="title">
+            <h1 id="title">Add Buyer's Details</h1>
+        </div>
+        <div class="maindiv">
+
+            <form>
+                <div class="flex-container">
+                    <div>
+                        <p class="buyerinfo">To whom is the order being delivered? <span>(Buyer's Info)</span></p>
+                    </div>
+                    <div class="field1">
+                        <div>
+                            <label for="Phone">Mobile Number</label>
+                            <input class="form-mobilenumber" type="number" placeholder="Enter buyer's phone number">
+                        </div>
+
+                        <div>
+                            <label for="">Full Name</label>
+                            <input class="form-fullname" type="text" placeholder="Enter full name">
+                        </div>
+
+                        <div>
+                            <label for="">Email<span class="optional"> (Optional)</span></label>
+                            <input class="form-email" type="email" placeholder="i.e abc@gmail.com">
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <p class="buyerinfo">Where is the order being delivered to?<span> (Buyer's Address)</span></p>
+                    </div>
+                    <div class="field2">
+                        <div class="fd2-child1">
+                            <label for="">Complete Address</label>
+                            <input class="form-address" type="text"
+                                placeholder="House/Floor No. Building Name or Street, Locality">
+                        </div>
+
+                        <div class="fd2-child2">
+                            <label for="">Landmark<span>(Optional)</span></label>
+                            <input class="form-landmark" type="text"
+                                placeholder="Any nearby post office, market, Hospital as the landmark">
+                        </div>
+                    </div>
+
+                    <div class="field3">
+                        <div>
+                            <label for="">Pincode</label>
+                            <input class="form-pincode" type="number" placeholder="Enter Buyer's Pincode">
+                        </div>
+
+                        <div>
+                            <label for="">City</label>
+                            <input class="form-city" type="text" placeholder="Enter Buyer's City">
+                        </div>
+
+                        <div>
+                            <label for="">State</label>
+                            <select class="form-state" name="" id="">
+                                <option value="">Please Select State</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Goa">Goa</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="">Country</label>
+                            <input class="form-country" type="text" placeholder="Country">
+                        </div>
+
+                    </div>
+
+                    <hr style="width:100%;text-align:left;margin-left:0; margin-top:40px;">
+
+
+
+                    <div>
+                        <p class="buyerinfo">Seller Information</p>
+                    </div>
+                    <div class="field1">
+                        <div>
+                            <label for="Phone">Mobile Number</label>
+                            <input class="form-sellermobilenumber" type="number" placeholder="Enter Seller phone number">
+                        </div>
+
+                        <div>
+                            <label for="">Full Name</label>
+                            <input class="form-sellerfullname" type="text" placeholder="Enter full name">
+                        </div>
+
+                        <div>
+                            <label for="">Email<span class="optional"> (Optional)</span></label>
+                            <input class="form-selleremail" type="email" placeholder="i.e abc@gmail.com">
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <p class="buyerinfo">Seller Address</p>
+                    </div>
+                    <div class="field2">
+                        <div class="fd2-child1">
+                            <label for="">Complete Address</label>
+                            <input class="form-selleraddress" type="text"
+                                placeholder="House/Floor No. Building Name or Street, Locality">
+                        </div>
+
+                        <div class="fd2-child2">
+                            <label for="">Landmark<span>(Optional)</span></label>
+                            <input class="form-sellerlandmark" type="text"
+                                placeholder="Any nearby post office, market, Hospital as the landmark">
+                        </div>
+                    </div>
+
+                    <div class="field3">
+                        <div>
+                            <label for="">Pincode</label>
+                            <input class="form-sellerpincode" type="number" placeholder="Enter Buyer's Pincode">
+                        </div>
+
+                        <div>
+                            <label for="">City</label>
+                            <input class="form-sellercity" type="text" placeholder="Enter Buyer's City">
+                        </div>
+
+                        <div>
+                            <label for="">State</label>
+                            <select class="form-sellerstate" name="" id="">
+                                <option value="">Please Select State</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Goa">Goa</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="">Country</label>
+                            <input class="form-sellercountry" type="text" placeholder="Country">
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <input type="submit" value="Submit" onclick="labelPDF()">
+                <a href="pdf.html">PDF Page</a>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
